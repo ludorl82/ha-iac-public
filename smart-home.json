@@ -1,0 +1,100 @@
+{
+  "about": "Home Assistant in Ludo's lab, summarised from its private configuration. What the smart home is made of — never who lives in it, where, or when.",
+  "platform": {
+    "hardware": "Home Assistant Green",
+    "os": "Home Assistant OS"
+  },
+  "integrations": [
+    "analytics",
+    "androidtv_remote",
+    "backup",
+    "cloud",
+    "esphome",
+    "google_assistant",
+    "google_cloud",
+    "google_weather",
+    "hacs",
+    "hassio",
+    "homeassistant_green",
+    "mqtt",
+    "nut",
+    "ollama",
+    "sun",
+    "switch_as_x",
+    "tplink",
+    "zha"
+  ],
+  "integrations_from_yaml": [
+    "command_line",
+    "energy",
+    "history",
+    "input_select",
+    "input_text",
+    "rest_command",
+    "shell_command",
+    "template",
+    "tts"
+  ],
+  "entities_by_domain": {
+    "assist_satellite": 2,
+    "automation": 26,
+    "binary_sensor": 16,
+    "button": 36,
+    "camera": 1,
+    "conversation": 2,
+    "event": 3,
+    "input_select": 2,
+    "input_text": 3,
+    "light": 24,
+    "media_player": 3,
+    "number": 7,
+    "remote": 1,
+    "scene": 2,
+    "script": 3,
+    "select": 14,
+    "sensor": 123,
+    "siren": 1,
+    "stt": 2,
+    "switch": 37,
+    "tts": 2,
+    "update": 30,
+    "weather": 1
+  },
+  "areas": 14,
+  "automations": {
+    "count": 22,
+    "by_trigger": {
+      "blueprint": 2,
+      "conversation": 2,
+      "device": 6,
+      "event": 1,
+      "homeassistant": 3,
+      "numeric_state": 1,
+      "state": 5,
+      "sun": 1,
+      "template": 2,
+      "time": 3,
+      "time_pattern": 5
+    }
+  },
+  "scripts": 3,
+  "scenes": 2,
+  "voice": {
+    "pipelines": [
+      {
+        "stt": "google_cloud",
+        "conversation": "ollama",
+        "tts": "google_cloud",
+        "language": "fr"
+      }
+    ],
+    "satellites": 2,
+    "tts_voices": [
+      "fr-CA-Chirp3-HD-Zubenelgenubi"
+    ]
+  },
+  "dashboards": 3,
+  "hacs": [
+    "hacs/integration@2.0.5"
+  ]
+}
